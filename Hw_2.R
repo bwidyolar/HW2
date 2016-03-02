@@ -24,8 +24,7 @@ top5 <- temp[(length(temp)-5+1):length(temp)]
 rm(temp)
 rm(top5)
 
-top5 <- ripdata[c(which(ripdata$Genus == "Fraxinus")),]
-top5 <- rbind(top5,ripdata[c(which(ripdata$Genus == "Acer")),])
+top5 <- ripdata[c(which(ripdata$Genus == "Acer")),]
 top5 <- rbind(top5,ripdata[c(which(ripdata$Genus == "Quercus")),])
 top5 <- rbind(top5,ripdata[c(which(ripdata$Genus == "Populus")),])
 top5 <- rbind(top5,ripdata[c(which(ripdata$Genus == "Salix")),])
